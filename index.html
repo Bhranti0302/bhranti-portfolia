@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhranti Tamboli - Full Stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+      <div class="counter">0%</div>
+    </div>
+    <div class="cursor-follower"></div>
+    <div class="marquee-container">
+      <div class="marquee marquee-bottom">
+        <div>
+          Full Stack Web Developer &#128515; Responsive Web Design &#128515;
+          Engaging UI/UX &#128515;
+        </div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <div class="img-responsive">
+              <img src="Images/image.jpg" alt="Bhranti Tamboli" />
+            </div>
+          </div>
+          <div class="col-right">
+            <h1>
+              <span>Hi! I'm Bhranti Tamboli</span><br />
+              Full Stack Web Developer
+            </h1>
+            <p>
+              I'm a full stack web developer based in Navsari, India. I
+              specialize in crafting responsive web applications and dynamic
+              user experiences using modern technologies.
+            </p>
+            <a href="#about" class="button">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h3>Who I am?</h3>
+            <h2>I'm Bhranti Tamboli, Full Stack Web Developer</h2>
+            <p>
+              I have a strong background in both front-end and back-end web
+              development, with a passion for creating efficient, responsive,
+              and user-friendly web applications. With experience in Node.js,
+              React.js, MongoDB, and various design tools, I aim to deliver
+              end-to-end solutions that meet client needs.
+            </p>
+          </div>
+          <div class="col-right">
+            <h2>3+ years</h2>
+            <h4>years of experience</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <ul>
+          <li>
+            <p>HTML, CSS, JavaScript</p>
+          </li>
+          <li>
+            <p>ReactJS, Redux, Next.js</p>
+          </li>
+          <li>
+            <p>Node.js, Express.js</p>
+          </li>
+          <li>
+            <p>MongoDB, RESTful APIs</p>
+          </li>
+          <li>
+            <p>Git, Figma, Webflow</p>
+          </li>
+          <li>
+            <p>UI/UX Design & Prototyping</p>
+          </li>
+          <li>
+            <p>Responsive Web Design</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio" id="my-projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+          <div class="project-card accordion-item" data-project="trans-justice">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button">
+                OmniFood - Eat Healthy
+              </button>
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Developed a community-led funding platform using HTML, CSS, and
+                JavaScript with a user-friendly interface and dynamic features.
+              </p>
+              <div class="tech-stack">
+                <strong>Tech Stack:</strong>
+                <span>HTML</span>, <span>CSS</span>,
+                <span>JavaScript</span>
+              </div>
+              <a
+                href="https://omnifood-eat-healthy-responsive.netlify.app/"
+                class="view-project-btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card accordion-item" data-project="forkify">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button">Forkify</button>
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Built a recipe search application with dynamic search and
+                bookmarking functionality, integrated with external APIs for
+                enhanced user interaction.
+              </p>
+              <div class="tech-stack">
+                <strong>Tech Stack:</strong>
+                <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
+                <span>API Integration</span>
+              </div>
+              <a
+                href="https://forkify-tasty-recipe.netlify.app/"
+                class="view-project-btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card accordion-item" data-project="wild-oasis">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button">Wild Oasis</button>
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Created a hotel management dashboard using ReactJS and Supabase,
+                designed for scalable interfaces and efficient data handling.
+              </p>
+              <div class="tech-stack">
+                <strong>Tech Stack:</strong>
+                <span>ReactJS</span>,
+                <span>Supabase</span>
+              </div>
+              <a
+                href="https://the-wild-oasis-alamin.vercel.app/settings"
+                class="view-project-btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-card accordion-item"
+            data-project="instagram-clone"
+          >
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button">
+                Instagram Clone
+              </button>
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Developed a fully functional social media app with real-time
+                commenting, image uploads, and user authentication using Next.js
+                and Firebase.
+              </p>
+              <div class="tech-stack">
+                <strong>Tech Stack:</strong>
+                <span>Next.js</span>,
+                <span>Firebase</span>
+              </div>
+              <a
+                href="https://nextjs-instagram-clone.vercel.app/"
+                class="view-project-btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card accordion-item" data-project="natours-api">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button">
+                Natours API
+              </button>
+            </h3>
+            <div class="accordion-content">
+              <p>
+                Created a RESTful API for a tour booking platform with
+                role-based access control and Stripe payment integration using
+                Node.js and MongoDB.
+              </p>
+              <div class="tech-stack">
+                <strong>Tech Stack:</strong>
+                <span>Node.js</span>, <span>MongoDB</span>,
+                <span>RESTful API</span>
+              </div>
+              <a
+                href="https://the-wild-oasis-alamin.vercel.app/settings"
+                class="view-project-btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h3>Contact Details</h3>
+            <h2>Get in Touch</h2>
+            <p>
+              Feel free to reach out if you have any questions or need
+              assistance with full stack development.
+            </p>
+            <ul>
+              <li>
+                <img src="Images/phone.png" alt="Phone Image" />
+                <a href="tel:8153913384">8153913384</a>
+              </li>
+              <li>
+                <img src="Images/mail.png" alt="Mail Image" />
+                <a href="mailto:bhrantitamboli40@gmail.com"
+                  >bhrantitamboli40@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <img src="Images/mail.gif" alt="Mail Animated Gif" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h3>Bhranti Tamboli</h3>
+            <p class="paragraph-small">
+              A full stack developer focused on creating robust and scalable web
+              solutions.
+            </p>
+          </div>
+          <div class="col-right">
+            <h4>Useful Links</h4>
+            <div class="links">
+              <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <div class="container">
+        <p class="paragraph-small">
+          <a href="#">© Bhranti Tamboli</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

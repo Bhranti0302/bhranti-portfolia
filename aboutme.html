@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhranti Tamboli - Full Stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  
+
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        line-height: 1.7;
+      }
+
+      .about-me {
+        padding: 200px 0;
+        text-align: left;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .about-me h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #fff;
+        letter-spacing: -0.02em;
+      }
+
+      .about-me p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #ddd;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .experience-section {
+        margin-top: 60px;
+        text-align: left;
+      }
+
+      .experience-section h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #ffb400;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+      }
+
+      .experience-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+
+      .experience-list li {
+        color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        border: 1px solid #333;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        background-color: #111;
+      }
+
+      .experience-list li:hover {
+        background-color: #1a1a1a;
+        transform: translateY(-5px);
+        border-color: #4caf50;
+      }
+
+      .experience-list li strong {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .experience-list li span {
+        display: block;
+        font-size: 0.9rem;
+        color: #999;
+        margin-bottom: 10px;
+      }
+
+      .project-section {
+        margin-top: 60px;
+        text-align: left;
+      }
+
+      .project-section h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #ffb400;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+      }
+
+      .project-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+
+      .project-list li {
+        color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        border: 1px solid #333;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        background-color: #111;
+      }
+
+      .project-list li:hover {
+        background-color: #1a1a1a;
+        transform: translateY(-5px);
+        border-color: #4caf50;
+      }
+
+      .project-list li strong {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .project-list li span {
+        display: block;
+        font-size: 0.9rem;
+        color: #999;
+        margin-bottom: 10px;
+      }
+      .project-list li p {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .about-me {
+          padding: 40px 0;
+        }
+
+        .about-me h2 {
+          font-size: 2.5rem;
+        }
+
+        .about-me p {
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        .experience-section {
+          margin-top: 40px;
+        }
+
+        .experience-list li {
+          font-size: 0.9rem;
+          padding: 15px;
+        }
+        .project-section {
+          margin-top: 40px;
+        }
+
+        .project-list li {
+          font-size: 0.9rem;
+          padding: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .about-me h2 {
+          font-size: 2rem;
+        }
+
+        .experience-list li {
+          font-size: 0.85rem;
+          padding: 10px;
+        }
+        .project-list li {
+          font-size: 0.85rem;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate and creative web developer with a strong foundation
+          in front-end technologies and a knack for creating engaging user
+          experiences. I thrive on challenges and am constantly seeking to
+          expand my skill set and stay up-to-date with the latest industry
+          trends. My goal is to leverage my expertise to build innovative and
+          impactful web solutions.
+        </p>
+        <section class="experience-section">
+          <h3>Experience</h3>
+          <ul class="experience-list">
+            <li>
+              <strong
+                >Junior Frontend Developer - August Infotech, Surat</strong
+              >
+              <span>Jul 2022 – Jan 2024</span>
+              <p>
+                - Developed responsive websites using HTML, CSS, JavaScript, and
+                customized WordPress themes.
+              </p>
+              <p>
+                - Designed user interfaces and created UI/UX prototypes to
+                enhance cross-device experiences.
+              </p>
+              <p>
+                - Created social media content, boosting online engagement and
+                performance.
+              </p>
+            </li>
+            <li>
+              <strong
+                >Frontend Developer Intern - August Infotech, Surat</strong
+              >
+              <span>Jan 2022 – Jul 2022</span>
+              <p>
+                - Developed responsive web applications focused on user-centric
+                features.
+              </p>
+              <p>
+                - Optimized website performance and improved SEO rankings
+                through coding best practices.
+              </p>
+              <p>
+                - Enhanced visual design using tools like Adobe Illustrator and
+                Photoshop.
+              </p>
+            </li>
+            <li>
+              <strong
+                >Internship Trainee - BrainyBeam Technologies Pvt. Ltd.,
+                Ahmedabad</strong
+              >
+              <span>May 2021 – Jun 2021</span>
+              <p>
+                - Assisted in mobile app development using Flutter and Dart.
+              </p>
+              <p>
+                - Collaborated on UI/UX design for cross-platform solutions.
+              </p>
+              <p>
+                - Participated in code reviews to improve coding standards and
+                practices.
+              </p>
+            </li>
+          </ul>
+        </section>
+        
+      </div>
+    </section>
+  </body>
+</html>

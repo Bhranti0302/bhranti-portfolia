@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhranti Tamboli - Full Stack Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        line-height: 1.7;
+      }
+
+      .contact {
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .contact h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #ffb400;
+        letter-spacing: -0.02em;
+      }
+
+      .contact p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #ddd;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-item i {
+        margin-right: 20px;
+        font-size: 2rem;
+        color: #ffb400;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+
+      .contact-item a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 400;
+        transition: color 0.3s ease;
+      }
+
+      .contact-item a:hover {
+        color: #4caf50;
+      }
+
+      .contact-form {
+        margin-top: 60px;
+        text-align: left;
+      }
+
+      .contact-form h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #ffb400;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+      }
+
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form label {
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #eee;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #111;
+        transition: border-color 0.3s ease;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: #4caf50;
+      }
+
+      .contact-form textarea {
+        resize: vertical;
+        height: 150px;
+      }
+
+      .contact-form button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #4caf50;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        align-self: flex-start;
+      }
+
+      .contact-form button:hover {
+        background-color: #45a049;
+        transform: translateY(-5px);
+      }
+
+      #email-status {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .contact h2 {
+          font-size: 2.5rem;
+        }
+
+        .contact p {
+          font-size: 1rem;
+        }
+
+        .contact-info {
+          margin-top: 20px;
+        }
+
+        .contact-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .contact-item i {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .contact-form h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .contact h2 {
+          font-size: 2rem;
+        }
+
+        .contact-item a {
+          font-size: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          font-size: 0.9rem;
+        }
+
+        .contact-form button {
+          font-size: 1rem;
+          padding: 12px 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+   <section class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me through any of the following channels:
+        </p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:bhrantitamboli123@gmail.com"
+              >bhrantitamboli123@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:8153913384">8153913384</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href=" https://www.linkedin.com/in/bhranti-tamboli/">
+              www.linkedin.com/in/bhranti-tamboli
+
+
+            </a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Bhranti0302">
+              https://github.com/Bhranti0302
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div id="email-status"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+        const contactForm = document.getElementById("contact-form");
+      const emailStatus = document.getElementById("email-status");
+
+      contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const data = {};
+        formData.forEach((value, key) => {
+          data[key] = value;
+        });
+
+        try {
+          emailStatus.textContent = "Sending...";
+          const response = await fetch("/send-email", {  // changed the fetch URL
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            const responseData = await response.json(); // Parse the JSON response
+            emailStatus.textContent = responseData.message || "Email sent successfully! Thank you!";
+            contactForm.reset();
+          } else {
+            const errorData = await response.json();
+            emailStatus.textContent = `Error: ${errorData.message || 'Failed to send email.'}`;
+          }
+        } catch (error) {
+          emailStatus.textContent = `Error: ${error.message}`;
+        }
+      });
+    </script>
+  </body>
+</html>
